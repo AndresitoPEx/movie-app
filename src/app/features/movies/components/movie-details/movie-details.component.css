@@ -1,0 +1,57 @@
+/* Contenedor principal */
+div {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Título de la vista */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de los párrafos */
+  p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Destacar los títulos de los detalles */
+  p strong {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Botón para volver */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mensaje de datos no encontrados */
+  ng-template p {
+    color: #dc3545;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  

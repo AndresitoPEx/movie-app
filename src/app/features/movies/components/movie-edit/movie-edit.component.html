@@ -1,0 +1,32 @@
+<h2>Editar Película</h2>
+<form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Título:</label>
+    <input id="title" formControlName="title" />
+    <div *ngIf="movieForm.get('title')?.invalid && movieForm.get('title')?.touched">
+      El título es obligatorio.
+    </div>
+  </div>
+  <div>
+    <label for="director">Director:</label>
+    <input id="director" formControlName="director" />
+    <div *ngIf="movieForm.get('director')?.invalid && movieForm.get('director')?.touched">
+      El director es obligatorio.
+    </div>
+  </div>
+  <div>
+    <label for="genre">Género:</label>
+    <input id="genre" formControlName="genre" />
+    <div *ngIf="movieForm.get('genre')?.invalid && movieForm.get('genre')?.touched">
+      El género es obligatorio.
+    </div>
+  </div>
+  <div>
+    <label for="releaseYear">Año de Lanzamiento:</label>
+    <input id="releaseYear" formControlName="releaseYear" />
+    <div *ngIf="movieForm.get('releaseYear')?.invalid && movieForm.get('releaseYear')?.touched">
+      El año de lanzamiento debe ser un número de 4 dígitos.
+    </div>
+  </div>
+  <button type="submit">Guardar Cambios</button>
+</form>

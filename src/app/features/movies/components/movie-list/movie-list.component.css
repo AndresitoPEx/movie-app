@@ -1,0 +1,107 @@
+/* Contenedor principal */
+.movie-list {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #141414; /* Fondo oscuro tipo Netflix */
+    color: #fff; /* Texto blanco */
+  }
+  
+  /* Título de la lista */
+  .movie-list h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e50914; /* Rojo Netflix */
+    text-transform: uppercase;
+  }
+  
+  /* Botón para agregar películas */
+  .movie-list > button {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e50914; /* Rojo Netflix */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-list > button:hover {
+    background-color: #f40612; /* Hover más claro */
+  }
+  
+  /* Lista de películas tipo carrusel */
+  .movie-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre películas */
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Tarjetas de película */
+  .movie-list li {
+    width: 200px; /* Ancho fijo */
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-list li:hover {
+    transform: scale(1.05); /* Zoom al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Imagen (Placeholder si no tienes imágenes) */
+  .movie-list li::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 300px; /* Altura fija */
+    background: url('https://media.istockphoto.com/id/1144514162/es/vector/pr%C3%B3ximamente-plantilla-de-vector-de-banner-de-ne%C3%B3n-brillante-noche-se%C3%B1al-de-letras.jpg?s=2048x2048&w=is&k=20&c=7YCtiC-OgqorZXe1uv-BdCz5oZbH3qoHM52YQO61I6E=') center center/cover no-repeat;
+  }
+  
+  /* Título de la película */
+  .movie-list h2 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Detalles de la película */
+  .movie-list p {
+    margin: 10px 15px;
+    font-size: 0.9rem;
+    color: #ccc; /* Texto en gris claro */
+    text-align: center;
+  }
+  
+  /* Botones dentro de las tarjetas */
+  .movie-list li button {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    background-color: #333; /* Fondo oscuro para los botones */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-list li button:hover {
+    background-color: #444;
+  }
+  

@@ -1,0 +1,14 @@
+<div *ngIf="movie; else noData">
+    <h2>Detalles de la Película</h2>
+    <p><strong>Título:</strong> {{ movie.title }}</p>
+    <p><strong>Director:</strong> {{ movie.director }}</p>
+    <p><strong>Género:</strong> {{ movie.genre }}</p>
+    <p><strong>Año de Lanzamiento:</strong> {{ movie.releaseYear }}</p>
+    <button (click)="goBack()">Volver</button>
+  </div>
+  
+  <ng-template #noData>
+    <p>No se encontraron datos para esta película.</p>
+    <button (click)="goBack()">Volver</button>
+  </ng-template>
+  
